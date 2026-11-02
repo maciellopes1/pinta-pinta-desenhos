@@ -16,6 +16,14 @@
    "file": "packs/fundo-do-mar.json",
    "count": 3,
    "rev": 1
+  },
+  {
+   "id": "princesas-e-principes",
+   "title": "Princesas e príncipes",
+   "premium": false,
+   "file": "packs/princesas-e-principes.json",
+   "count": 10,
+   "rev": 1
   }
  ]
 }
