@@ -42,6 +42,14 @@
    "rev": 1
   },
   {
+   "id": "brinquedos",
+   "title": "Brinquedos",
+   "premium": false,
+   "file": "packs/brinquedos.json",
+   "count": 15,
+   "rev": 1
+  },
+  {
    "id": "familia-cachorrinhos",
    "title": "Família de cachorrinhos",
    "premium": false,
