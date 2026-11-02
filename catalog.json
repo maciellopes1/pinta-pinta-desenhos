@@ -40,6 +40,14 @@
    "file": "packs/sereias.json",
    "count": 8,
    "rev": 1
+  },
+  {
+   "id": "familia-cachorrinhos",
+   "title": "Família de cachorrinhos",
+   "premium": false,
+   "file": "packs/familia-cachorrinhos.json",
+   "count": 10,
+   "rev": 1
   }
  ]
 }
