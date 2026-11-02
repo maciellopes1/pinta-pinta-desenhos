@@ -1,0 +1,21 @@
+{
+ "version": 1,
+ "packs": [
+  {
+   "id": "doces",
+   "title": "Doces",
+   "premium": false,
+   "file": "packs/doces.json",
+   "count": 2,
+   "rev": 1
+  },
+  {
+   "id": "fundo-do-mar",
+   "title": "Fundo do mar",
+   "premium": true,
+   "file": "packs/fundo-do-mar.json",
+   "count": 3,
+   "rev": 1
+  }
+ ]
+}
