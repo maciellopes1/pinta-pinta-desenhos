@@ -23,6 +23,22 @@
    "premium": false,
    "file": "packs/princesas-e-principes.json",
    "count": 10,
+   "rev": 2
+  },
+  {
+   "id": "bailarinas",
+   "title": "Bailarinas",
+   "premium": true,
+   "file": "packs/bailarinas.json",
+   "count": 8,
+   "rev": 1
+  },
+  {
+   "id": "sereias",
+   "title": "Sereias",
+   "premium": true,
+   "file": "packs/sereias.json",
+   "count": 8,
    "rev": 1
   }
  ]
