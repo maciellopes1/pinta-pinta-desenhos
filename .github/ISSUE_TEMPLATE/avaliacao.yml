@@ -1,0 +1,44 @@
+name: Avaliação do app (grupo de teste)
+description: Conte como foi testar o Pinta Pinta. Esta resposta fica pública, então não escreva o nome da criança nem dados pessoais.
+title: "Avaliação 1.0.1"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por testar! Se preferir responder pelo celular e mandar pelo WhatsApp, use o [formulário de avaliação](https://maciellopes1.github.io/pinta-pinta-desenhos/avaliacao/), que também mostra sua nota de 0 a 1000.
+  - type: dropdown
+    id: quem
+    attributes: { label: Quem usou o app?, options: ["Criança de 2 a 3 anos", "Criança de 4 a 5 anos", "Criança de 6 anos ou mais", "Só um adulto"] }
+    validations: { required: true }
+  - type: input
+    id: aparelho
+    attributes: { label: Qual celular ou tablet?, placeholder: "Samsung A15" }
+  - type: dropdown
+    id: nota
+    attributes: { label: Que nota você dá para o app? (1 a 5), options: ["1", "2", "3", "4", "5"] }
+    validations: { required: true }
+  - type: dropdown
+    id: sozinha
+    attributes: { label: A criança conseguiu usar sozinha?, options: ["Sim, sozinha", "Com um pouco de ajuda", "Precisou de muita ajuda"] }
+  - type: checkboxes
+    id: problemas
+    attributes:
+      label: Quais ferramentas deram problema?
+      options:
+        - label: Balde
+        - label: Pincel
+        - label: Borracha
+        - label: Brilho
+        - label: Desfazer
+        - label: Cores e "Mais cores"
+        - label: Aproximar com dois dedos
+        - label: O app travou ou fechou sozinho
+  - type: textarea
+    id: bug
+    attributes: { label: Se algo deu errado, o que estava fazendo na hora? }
+  - type: textarea
+    id: gostou
+    attributes: { label: O que você e a criança mais gostaram? }
+  - type: textarea
+    id: mudaria
+    attributes: { label: O que você mudaria ou acrescentaria? }

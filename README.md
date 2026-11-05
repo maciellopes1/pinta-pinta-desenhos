@@ -6,6 +6,9 @@ O app já vem apontando para este endereço (dá para trocar em Área dos pais >
 
     https://raw.githubusercontent.com/maciellopes1/pinta-pinta-desenhos/main/
 
+Formulário de avaliação do grupo de teste: `avaliacao/index.html` (precisa do GitHub Pages ligado, endereço
+`https://maciellopes1.github.io/pinta-pinta-desenhos/avaliacao/`). Também dá para avaliar por Issue (modelo em `.github/ISSUE_TEMPLATE`).
+
 Se preferir o GitHub Pages, ative em Settings > Pages > Branch `main` / `(root)` e use
 `https://maciellopes1.github.io/pinta-pinta-desenhos/`.
 
