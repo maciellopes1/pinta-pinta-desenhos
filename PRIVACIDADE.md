@@ -4,7 +4,7 @@ _Última atualização: 5 de novembro de 2026_
 
 > **Em resumo:** o Pinta Pinta não pede cadastro, não mostra anúncios, não usa ferramentas de análise e não coleta nem envia dados pessoais das crianças ou dos responsáveis. As pinturas ficam guardadas só no aparelho.
 
-O Pinta Pinta é um aplicativo de colorir para crianças de 2 a 6 anos, desenvolvido por Maciel Lopes ("nós"). Esta política explica o que acontece com as informações quando o app é usado. Ela vale para o aplicativo Android publicado na Google Play com o pacote `br.com.pintapinta`.
+O Pinta Pinta é um aplicativo de colorir para crianças de 2 a 6 anos, desenvolvido por Maciel Lopes ("nós"). Esta política explica o que acontece com as informações quando o app é usado. Ela vale para o aplicativo Android publicado na Google Play com o pacote `br.com.maciellopes.pintapinta`.
 
 ## 1. Dados que coletamos
 
