@@ -65,7 +65,7 @@
     <li>50 pontos por dizer qual é o aparelho.</li>
     <li>Até 550 pontos pelos textos: quanto mais detalhes concretos (o que a criança fez, onde travou, o que você mudaria), mais pontos.</li>
   </ul></details>
-  <p class="muted">Nada é enviado automaticamente. No fim, você escolhe como mandar as respostas (WhatsApp, outro app ou copiar o texto). Não escreva o nome da criança nem dados pessoais dela. As respostas ficam guardadas só neste navegador até você enviar.</p>
+  <p class="muted">Nada é enviado enquanto você responde. No fim, ao tocar em "Enviar respostas", elas vão para uma planilha privada do Lopes no Google Drive. Não escreva o nome da criança nem dados pessoais dela. As respostas ficam guardadas só neste navegador até você enviar.</p>
 </header>
 
 <form id="f" autocomplete="off">
@@ -323,9 +323,10 @@
 
 <section>
   <h2>Enviar</h2>
-  <p class="muted">Escolha um jeito. O WhatsApp abre com o texto pronto para você mandar para o Lopes.</p>
+  <p class="muted">Toque em "Enviar respostas". Se não funcionar, mande pelo WhatsApp: ele abre com o texto pronto.</p>
   <div class="send">
-    <a class="btn primary" id="whats" href="#" rel="noopener">Enviar pelo WhatsApp</a>
+    <button type="button" class="primary" id="sheet" hidden>Enviar respostas</button>
+    <a class="btn secondary" id="whats" href="#" rel="noopener">Enviar pelo WhatsApp</a>
     <button type="button" class="secondary" id="share" hidden>Enviar por outro app</button>
     <button type="button" class="secondary" id="copy">Copiar respostas</button>
     <a class="btn secondary" id="issue" href="#" rel="noopener">Enviar pelo GitHub (tenho conta)</a>
@@ -347,6 +348,8 @@
   // Número do WhatsApp do Lopes com DDI e DDD, só dígitos (ex.: "5511999999999").
   // Vazio: o WhatsApp abre e a pessoa escolhe o contato.
   var WHATSAPP = "";
+  // URL do app da Web do Apps Script da planilha (termina em /exec). Ver planilha.gs.
+  var SHEET_URL = "";
   var REPO = "maciellopes1/pinta-pinta-desenhos";
   var VERSAO = "1.0.1";
   var KEY = "pinta-avaliacao-v1";
@@ -356,7 +359,7 @@
 
   function store(fn) { try { return fn(); } catch (e) { return null; } }
 
-  function save() {
+  function collect() {
     var data = {};
     Array.prototype.forEach.call(form.elements, function (el) {
       if (!el.name) return;
@@ -364,6 +367,11 @@
       else if (el.type === "checkbox") { if (el.checked) (data[el.name] = data[el.name] || []).push(el.value); }
       else if (el.value) data[el.name] = el.value;
     });
+    return data;
+  }
+
+  function save() {
+    var data = collect();
     store(function () { localStorage.setItem(KEY, JSON.stringify(data)); });
   }
 
@@ -451,6 +459,28 @@
   form.addEventListener("input", function () { save(); refresh(); });
   form.addEventListener("change", function () { save(); refresh(); });
   form.addEventListener("submit", function (e) { e.preventDefault(); });
+
+  if (SHEET_URL) {
+    $("sheet").hidden = false;
+    $("sheet").addEventListener("click", function (e) {
+      if (!guard(e)) return;
+      var btn = this, data = collect();
+      data.versao = VERSAO;
+      btn.disabled = true; btn.textContent = "Enviando...";
+      // text/plain evita a checagem CORS; a resposta do Google não pode ser lida, então confiamos no envio.
+      fetch(SHEET_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(data) })
+        .then(function () {
+          btn.textContent = "Respostas enviadas";
+          $("status").textContent = "Obrigado! Sua avaliação chegou com nota " + score().total + " de 1000.";
+        })
+        .catch(function () {
+          btn.disabled = false; btn.textContent = "Enviar respostas";
+          $("status").textContent = "Não deu para enviar agora. Confira a internet ou use o WhatsApp.";
+        });
+    });
+  } else {
+    $("whats").className = "btn primary";
+  }
 
   $("whats").addEventListener("click", function (e) { if (guard(e)) { e.preventDefault(); window.open(this.href, "_blank", "noopener"); } });
   $("issue").addEventListener("click", function (e) { if (guard(e)) { e.preventDefault(); window.open(this.href, "_blank", "noopener"); } });
