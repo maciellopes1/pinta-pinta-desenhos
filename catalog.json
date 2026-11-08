@@ -80,6 +80,14 @@
    "file": "packs\/meus-svgs.json",
    "rev": 1,
    "count": 1
+  },
+  {
+   "id": "face",
+   "title": "Face",
+   "premium": false,
+   "file": "packs\/face.json",
+   "rev": 1,
+   "count": 1
   }
  ]
 }
