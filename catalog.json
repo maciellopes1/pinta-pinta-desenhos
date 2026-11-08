@@ -5,7 +5,7 @@
    "id": "doces",
    "title": "Doces",
    "premium": false,
-   "file": "packs\/doces.json",
+   "file": "packs/doces.json",
    "count": 2,
    "rev": 1
   },
@@ -13,7 +13,7 @@
    "id": "fundo-do-mar",
    "title": "Fundo do mar",
    "premium": true,
-   "file": "packs\/fundo-do-mar.json",
+   "file": "packs/fundo-do-mar.json",
    "count": 3,
    "rev": 1
   },
@@ -21,7 +21,7 @@
    "id": "princesas-e-principes",
    "title": "Princesas e príncipes",
    "premium": false,
-   "file": "packs\/princesas-e-principes.json",
+   "file": "packs/princesas-e-principes.json",
    "count": 10,
    "rev": 2
   },
@@ -29,7 +29,7 @@
    "id": "bailarinas",
    "title": "Bailarinas",
    "premium": true,
-   "file": "packs\/bailarinas.json",
+   "file": "packs/bailarinas.json",
    "count": 8,
    "rev": 1
   },
@@ -37,7 +37,7 @@
    "id": "sereias",
    "title": "Sereias",
    "premium": true,
-   "file": "packs\/sereias.json",
+   "file": "packs/sereias.json",
    "count": 8,
    "rev": 1
   },
@@ -45,7 +45,7 @@
    "id": "brinquedos",
    "title": "Brinquedos",
    "premium": false,
-   "file": "packs\/brinquedos.json",
+   "file": "packs/brinquedos.json",
    "count": 15,
    "rev": 1
   },
@@ -53,7 +53,7 @@
    "id": "familia-cachorrinhos",
    "title": "Família de cachorrinhos",
    "premium": false,
-   "file": "packs\/familia-cachorrinhos.json",
+   "file": "packs/familia-cachorrinhos.json",
    "count": 10,
    "rev": 1
   },
@@ -61,7 +61,7 @@
    "id": "princesa-eliza",
    "title": "Princesa eliza",
    "premium": false,
-   "file": "packs\/princesa-eliza.json",
+   "file": "packs/princesa-eliza.json",
    "rev": 20,
    "count": 4
   },
@@ -69,15 +69,15 @@
    "id": "unhas",
    "title": "Unhas",
    "premium": false,
-   "file": "packs\/unhas.json",
-   "rev": 16,
+   "file": "packs/unhas.json",
+   "rev": 17,
    "count": 5
   },
   {
    "id": "meus-svgs",
    "title": "Meus SVGs",
    "premium": false,
-   "file": "packs\/meus-svgs.json",
+   "file": "packs/meus-svgs.json",
    "rev": 1,
    "count": 1
   }
