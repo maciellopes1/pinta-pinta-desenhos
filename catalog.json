@@ -62,7 +62,7 @@
    "title": "Princesa eliza",
    "premium": false,
    "file": "packs\/princesa-eliza.json",
-   "rev": 22,
+   "rev": 23,
    "count": 5
   },
   {
@@ -70,7 +70,7 @@
    "title": "Unhas",
    "premium": false,
    "file": "packs\/unhas.json",
-   "rev": 22,
+   "rev": 23,
    "count": 8
   },
   {
@@ -86,7 +86,7 @@
    "title": "Face",
    "premium": false,
    "file": "packs\/face.json",
-   "rev": 9,
+   "rev": 10,
    "count": 8
   }
  ]
