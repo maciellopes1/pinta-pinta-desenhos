@@ -62,7 +62,7 @@
    "title": "Princesa eliza",
    "premium": false,
    "file": "packs\/princesa-eliza.json",
-   "rev": 23,
+   "rev": 22,
    "count": 5
   },
   {
@@ -70,8 +70,8 @@
    "title": "Unhas",
    "premium": false,
    "file": "packs\/unhas.json",
-   "rev": 21,
-   "count": 6
+   "rev": 22,
+   "count": 8
   },
   {
    "id": "meus-svgs",
@@ -80,6 +80,14 @@
    "file": "packs\/meus-svgs.json",
    "rev": 1,
    "count": 1
+  },
+  {
+   "id": "face",
+   "title": "Face",
+   "premium": false,
+   "file": "packs\/face.json",
+   "rev": 9,
+   "count": 8
   }
  ]
 }
