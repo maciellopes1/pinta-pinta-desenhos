@@ -88,6 +88,14 @@
    "file": "packs\/face.json",
    "rev": 16,
    "count": 13
+  },
+  {
+   "id": "roupa-de-gala",
+   "title": "Roupa de gala",
+   "premium": false,
+   "file": "packs\/roupa-de-gala.json",
+   "rev": 1,
+   "count": 1
   }
  ]
 }
