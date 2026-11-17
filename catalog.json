@@ -96,6 +96,14 @@
    "file": "packs\/roupa-de-gala.json",
    "rev": 8,
    "count": 8
+  },
+  {
+   "id": "dinossauros",
+   "title": "Dinossauros",
+   "premium": false,
+   "file": "packs\/dinossauros.json",
+   "rev": 1,
+   "count": 1
   }
  ]
 }
